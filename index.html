@@ -36,7 +36,7 @@
       background-color: white;
       padding: 30px;
       margin: 20px auto;
-      max-width: 800px;
+      max-width: 1000px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
@@ -47,26 +47,23 @@
       padding: 20px;
     }
 
-    /* Image Scroll Effects */
+    /* Scroll image effects */
     .image-container {
       position: relative;
       width: 100%;
-      max-width: 400px;
-      height: auto;
-      margin: 40px auto 0;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-top: 40px;
     }
-
     .image1, .image2 {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: auto;
       object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
       transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-      border-radius: 12px;
     }
-
     .image2 {
       opacity: 0;
       transform: translateY(30px);
@@ -99,9 +96,10 @@
         <li>초경량 자동 우산</li>
       </ul>
 
+      <!-- Scroll image effect -->
       <div class="image-container">
-        <img src="image/umbrella 1.jpg" alt="우산 이미지" class="image1" id="img1">
-        <img src="image/umrella 2.jpg" alt="다른 우산" class="image2" id="img2">
+        <img src="image/umbrella 1.jpg" alt="우산 1" class="image1" id="img1">
+        <img src="image/umbrella 2.jpg" alt="우산 2" class="image2" id="img2">
       </div>
     </div>
 
